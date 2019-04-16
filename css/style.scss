@@ -1,8 +1,64 @@
 /* 
-    Author     : Jason Whitcher
+    Author      : Jason Whitcher
+    Description : General style overrides for a website template.
 */
 
-body {
-    font-family: fantasy;
-    font-size: 20px;
+/* Attribute variables */
+$jw-color-primary:		red;
+$jw-color-primary-lt:	pink;
+$jw-color-secondary:	blue;
+$jw-color-secondary-lt:	light-blue;
+$jw-color-accent:		green;
+
+$jw-color-text:			gray;
+$jw-color-text-lt:		gray;
+$jw-bg-color-primary:	white;
+$jw-bg-color-accent:	gray;
+
+$jw-font-family:		fantasy;
+
+$jw-font-size-base:		18px;
+$jw-font-size-sm:		0.7em;
+$jw-font-size-med:		1.0em;
+$jw-font-size-lg:		1.2em;
+$jw-font-size-xl:		1.4em;
+
+/* Mixins */
+@mixin elementDisplayReset() {
+	display: block;
+	margin: 0;
+	padding: 0;
 }
+
+body {
+	@include elementDisplayReset();
+    font-family: $jw-font-family;
+    font-size: $jw-font-size-base;
+    color: $jw-color-text;
+    background-color: $jw-bg-color-primary;
+}
+h1, h2, h3, h4, h5, h6 {
+	@include elementDisplayReset();
+	font-weight: bold;
+}
+h1 { font-size: $jw-font-size-xl; }
+h2 { font-size: $jw-font-size-lg; }
+h3 { font-size: $jw-font-size-med; }
+h4, h5, h6 { font-size: $jw-font-size-sm; }
+p {
+	@include elementDisplayReset();
+	font-size: $jw-font-size-med;
+}
+strong {
+	font-size: $jw-font-size-med;
+	font-weight: bold;
+}
+em { font-size: $jw-font-size-med; }
+ol, ul {
+	@include elementDisplayReset();
+	li {
+		margin: 0 0 0 2.5em;
+	}
+}
+
+

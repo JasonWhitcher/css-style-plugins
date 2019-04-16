@@ -1,8 +1,54 @@
 /* 
-    Author     : Jason Whitcher
+    Author      : Jason Whitcher
+    Description : General style overrides for a website template.
 */
+/* Attribute variables */
+/* Mixins */
 body {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-family: fantasy;
-  font-size: 20px; }
+  font-size: 18px;
+  color: gray;
+  background-color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold; }
+
+h1 {
+  font-size: 1.4em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1em; }
+
+h4, h5, h6 {
+  font-size: 0.7em; }
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em; }
+
+strong {
+  font-size: 1em;
+  font-weight: bold; }
+
+em {
+  font-size: 1em; }
+
+ol, ul {
+  display: block;
+  margin: 0;
+  padding: 0; }
+  ol li, ul li {
+    margin: 0 0 0 2.5em; }
 
 /*# sourceMappingURL=style.css.map */
