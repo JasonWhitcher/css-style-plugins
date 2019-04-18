@@ -66,5 +66,34 @@ ol, ul {
 		margin: 0 0 0 2.5em;
 	}
 }
+ol {
+	list-style-type: lower-roman;
+}
+ul {
+	list-style-type: square;
+}
+form {
+	@include elementDisplayReset();
+	label {
+		font-size: $jw-font-size-sm;
+	}
+	input {
+		padding: 3px;
+		border: 1px solid $jw-color-accent;
+		border-radius: 3px;
+		font-size: $jw-font-size-med;
+		color: $jw-color-text;
+	}
+	input[type='radio'] {
 
+	}
+	input[type='checkbox'] {
 
+	}
+	input[type='button'],
+	input[type='submit'],
+	input[type='reset'] {
+		background-color: $jw-color-accent;
+		color: $jw-color-primary;
+	}
+}

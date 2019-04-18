@@ -59,4 +59,28 @@ ol, ul {
   ol li, ul li {
     margin: 0 0 0 2.5em; }
 
+ol {
+  list-style-type: lower-roman; }
+
+ul {
+  list-style-type: square; }
+
+form {
+  display: block;
+  margin: 0;
+  padding: 0; }
+  form label {
+    font-size: 0.7em; }
+  form input {
+    padding: 3px;
+    border: 1px solid green;
+    border-radius: 3px;
+    font-size: 1em;
+    color: gray; }
+  form input[type='button'],
+  form input[type='submit'],
+  form input[type='reset'] {
+    background-color: green;
+    color: red; }
+
 /*# sourceMappingURL=style.css.map */
