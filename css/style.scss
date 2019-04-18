@@ -37,6 +37,12 @@ body {
     color: $jw-color-text;
     background-color: $jw-bg-color-primary;
 }
+nav,
+article,
+aside,
+footer {
+	@include elementDisplayReset();
+}
 h1, h2, h3, h4, h5, h6 {
 	@include elementDisplayReset();
 	font-weight: bold;
