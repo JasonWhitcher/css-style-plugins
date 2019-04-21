@@ -4,16 +4,16 @@
 */
 
 /* Attribute variables */
-$jw-color-primary:		red;
-$jw-color-primary-lt:	pink;
-$jw-color-secondary:	blue;
-$jw-color-secondary-lt:	light-blue;
-$jw-color-accent:		green;
+$jw-color-primary:		#CC8F14;
+$jw-color-primary-lt:	#997B3D;
+$jw-color-secondary:	#00CC6B;
+$jw-color-secondary-lt:	#40FFDA;
+$jw-color-accent:		#FF6A01;
 
 $jw-color-text:			gray;
 $jw-color-text-lt:		gray;
 $jw-bg-color-primary:	white;
-$jw-bg-color-accent:	gray;
+$jw-bg-color-accent:	#d8d8d8;
 
 $jw-font-family:		fantasy;
 
@@ -39,6 +39,7 @@ body {
 }
 nav,
 article,
+section,
 aside,
 footer {
 	@include elementDisplayReset();
@@ -46,6 +47,7 @@ footer {
 h1, h2, h3, h4, h5, h6 {
 	@include elementDisplayReset();
 	font-weight: bold;
+	color: $jw-color-primary;
 }
 h1 { font-size: $jw-font-size-xl; }
 h2 { font-size: $jw-font-size-lg; }
@@ -77,23 +79,43 @@ form {
 	label {
 		font-size: $jw-font-size-sm;
 	}
-	input {
+	input,
+	select {
+		display: block;
 		padding: 3px;
 		border: 1px solid $jw-color-accent;
 		border-radius: 3px;
 		font-size: $jw-font-size-med;
 		color: $jw-color-text;
 	}
-	input[type='radio'] {
-
+	fieldset {
+		@include elementDisplayReset();
+		input[type='radio'] {
+			display: inline-block;
+		}
+		input[type='checkbox'] {
+			display: inline-block;
+		}
+		label {
+			display: inline-block;
+			font-size: $jw-font-size-med;
+		}
 	}
-	input[type='checkbox'] {
-
+	select {
+		optgroup {
+			font-size: $jw-font-size-xl;
+			option {
+				font-size: inherit;
+			}
+		}
 	}
 	input[type='button'],
 	input[type='submit'],
 	input[type='reset'] {
+		padding: 3px 1em;
+		margin: 2px;
+		border: none;
 		background-color: $jw-color-accent;
-		color: $jw-color-primary;
+		color: $jw-bg-color-accent;
 	}
 }

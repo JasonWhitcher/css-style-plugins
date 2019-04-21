@@ -53,19 +53,33 @@ Description: This is a template/demo page for the 'css-style-plugins'.
             <label for="tellabel">US Telephone Label</label>
             <input type="tel" id="tellabel" />
             
-            <input type="radio" id="radio1" name="radiodemo" value="radio1" checked="checked" />
-            <label for="radio1">Radio 1</label>
-            <input type="radio" id="radio2"  name="radiodemo" value="radio3" />
-            <label for="radio2">Radio 2</label>
-            <input type="radio" id="radio3" name="radiodemo" value="radio3" />
-            <label for="radio3">Radio 3</label>
+            <!-- Be sure to include radio and checkbox in a fieldset element
+                 for the styling to work properly. -->
+            <fieldset>
+                <legend>Radio Group</legend>
+                <input type="radio" id="radio1" name="radiodemo" value="radio1" checked="checked" />
+                <label for="radio1">Radio 1</label>
+                <br />
+                <input type="radio" id="radio2"  name="radiodemo" value="radio3" />
+                <label for="radio2">Radio 2</label>
+                <br />
+                <input type="radio" id="radio3" name="radiodemo" value="radio3" />
+                <label for="radio3">Radio 3</label>
+            </fieldset>
             
-            <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1" />
-            <label>Checkbox 1</label>
-            <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2" />
-            <label>Checkbox 2</label>
-            <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3" />
-            <label>Checkbox 3</label>
+            <!-- Be sure to include radio and checkbox in a fieldset element
+                 for the styling to work properly. -->
+            <fieldset>
+                <legend>Checkbox Group</legend>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1" />
+                <label>Checkbox 1</label>
+                <br />
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2" />
+                <label>Checkbox 2</label>
+                <br />
+                <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3" />
+                <label>Checkbox 3</label>
+            </fieldset>
             
             <select>
                 <optgroup label="Select Optgroup Label">
